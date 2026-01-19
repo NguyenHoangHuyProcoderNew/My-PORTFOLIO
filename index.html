@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nguyễn Hoàng Huy - Full Stack Developer với 5+ năm kinh nghiệm">
+    <title>Nguyễn Hoàng Huy | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo"><span>&lt;HUY/&gt;</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="#about" class="nav-link">Về Tôi</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ Năng</a></li>
+                <li><a href="#projects" class="nav-link">Dự Án</a></li>
+                <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge"><span class="badge-dot"></span><span>Sẵn sàng nhận việc</span></div>
+                <h1 class="hero-title">
+                    <span class="greeting">Xin chào, tôi là</span>
+                    <span class="name" data-text="Nguyễn Hoàng Huy">Nguyễn Hoàng Huy</span>
+                    <span class="title-typing"><span class="typed-text"></span><span
+                            class="cursor-typing">|</span></span>
+                </h1>
+                <p class="hero-description">Full Stack Developer với <strong>5+ năm kinh nghiệm</strong> trong việc xây
+                    dựng các ứng dụng web hiện đại và phần mềm desktop chuyên nghiệp.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i><span>Xem Dự Án</span></a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i><span>Liên Hệ</span></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><span class="stat-number" data-target="5">0</span><span
+                            class="stat-plus">+</span><span class="stat-label">Năm KN</span></div>
+                    <div class="stat-item"><span class="stat-number" data-target="50">0</span><span
+                            class="stat-plus">+</span><span class="stat-label">Dự Án</span></div>
+                    <div class="stat-item"><span class="stat-number" data-target="30">0</span><span
+                            class="stat-plus">+</span><span class="stat-label">Khách Hàng</span></div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <img src="image/avatar.jpg" alt="Nguyễn Hoàng Huy" class="profile-img">
+                    <div class="floating-badge badge-1"><i class="fab fa-react"></i></div>
+                    <div class="floating-badge badge-2"><i class="fab fa-node-js"></i></div>
+                    <div class="floating-badge badge-3"><i class="fab fa-python"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div><span>Cuộn xuống</span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Giới Thiệu</span>
+                <h2 class="section-title">Về Bản Thân Tôi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=600&h=700&fit=crop"
+                            alt="Working">
+                        <div class="experience-badge"><span class="exp-number">5+</span><span
+                                class="exp-text">Năm<br>Kinh Nghiệm</span></div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Xin chào! Tôi là <span class="highlight">Huy</span></h3>
+                    <p>Là một <strong>Full Stack Developer</strong> đam mê công nghệ với hơn 5 năm kinh nghiệm trong
+                        việc phát triển các ứng dụng web và desktop. Tôi tin rằng mỗi dòng code đều có thể tạo ra giá
+                        trị thực sự cho người dùng và doanh nghiệp.</p>
+                    <p>Tôi đã có cơ hội làm việc với nhiều loại dự án khác nhau, từ các website thương mại điện tử, hệ
+                        thống quản lý doanh nghiệp, đến các ứng dụng desktop phức tạp.</p>
+                    <div class="about-info">
+                        <div class="info-item"><i class="fas fa-user"></i>
+                            <div><span class="info-label">Họ tên</span><span class="info-value">Nguyễn Hoàng Huy</span>
+                            </div>
+                        </div>
+                        <div class="info-item"><i class="fas fa-briefcase"></i>
+                            <div><span class="info-label">Kinh nghiệm</span><span class="info-value">5+ năm</span></div>
+                        </div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i>
+                            <div><span class="info-label">Địa điểm</span><span class="info-value">Việt Nam</span></div>
+                        </div>
+                        <div class="info-item"><i class="fas fa-language"></i>
+                            <div><span class="info-label">Ngôn ngữ</span><span class="info-value">Tiếng Việt,
+                                    English</span></div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-download"></i><span>Tải CV</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Chuyên Môn</span>
+                <h2 class="section-title">Kỹ Năng & Công Nghệ</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development - Gắn với dự án Website Luyện Thi -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-globe"></i></div>
+                        <div class="category-info">
+                            <h3>Web Development</h3>
+                            <span class="project-badge"><i class="fas fa-link"></i> Website Luyện Thi Sát Hạch</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fab fa-html5"></i>
+                                <span class="skill-name">HTML5 & CSS3</span>
+                            </div>
+                            <p class="skill-desc">Xây dựng giao diện mô phỏng Sa Hình và Đường Trường với layout phức
+                                tạp, responsive hoàn toàn.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fab fa-js"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <p class="skill-desc">Xử lý logic tính điểm tự động, phát hiện lỗi vi phạm, điều khiển âm
+                                thanh hướng dẫn real-time.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span class="skill-name">Responsive Design</span>
+                            </div>
+                            <p class="skill-desc">Tối ưu trải nghiệm trên mọi thiết bị từ mobile đến desktop với CSS
+                                Grid & Flexbox.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-magic"></i>
+                                <span class="skill-name">CSS Animation</span>
+                            </div>
+                            <p class="skill-desc">Tạo hiệu ứng mô phỏng xe di chuyển, đèn tín hiệu, và các animation
+                                tương tác người dùng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop & Python - Gắn với dự án QR CCCD -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="category-info">
+                            <h3>Desktop & Python</h3>
+                            <span class="project-badge"><i class="fas fa-link"></i> Phần mềm QR CCCD</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fab fa-python"></i>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <p class="skill-desc">Phát triển ứng dụng desktop hoàn chỉnh với xử lý hình ảnh, quét QR
+                                code và quản lý dữ liệu.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-database"></i>
+                                <span class="skill-name">SQLite Database</span>
+                            </div>
+                            <p class="skill-desc">Thiết kế và quản lý CSDL lưu trữ thông tin công dân, hỗ trợ tìm kiếm,
+                                lọc và xuất báo cáo.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="skill-name">QR Code Reader</span>
+                            </div>
+                            <p class="skill-desc">Tích hợp webcam quét mã QR trên CCCD, parse dữ liệu và tự động điền
+                                thông tin.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-file-excel"></i>
+                                <span class="skill-name">Data Export</span>
+                            </div>
+                            <p class="skill-desc">Xuất dữ liệu ra Excel với format chuyên nghiệp, hỗ trợ báo cáo và lưu
+                                trữ.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-tools"></i></div>
+                        <div class="category-info">
+                            <h3>DevOps & Tools</h3>
+                            <span class="project-badge"><i class="fas fa-check-circle"></i> Áp dụng trong mọi dự
+                                án</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fab fa-git-alt"></i>
+                                <span class="skill-name">Git & GitHub</span>
+                            </div>
+                            <p class="skill-desc">Quản lý version control, branching strategy và collaboration trong
+                                team development.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-code"></i>
+                                <span class="skill-name">VS Code & IDE</span>
+                            </div>
+                            <p class="skill-desc">Thành thạo các IDE hiện đại với debugging, extensions và workflow tối
+                                ưu.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-terminal"></i>
+                                <span class="skill-name">Command Line</span>
+                            </div>
+                            <p class="skill-desc">Sử dụng thành thạo PowerShell, Bash cho automation và scripting tasks.
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-bug"></i>
+                                <span class="skill-name">Debugging</span>
+                            </div>
+                            <p class="skill-desc">Kỹ năng debug, trace lỗi và tối ưu performance cho ứng dụng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-brain"></i></div>
+                        <div class="category-info">
+                            <h3>Soft Skills</h3>
+                            <span class="project-badge"><i class="fas fa-star"></i> Điểm mạnh cá nhân</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-lightbulb"></i>
+                                <span class="skill-name">Problem Solving</span>
+                            </div>
+                            <p class="skill-desc">Khả năng phân tích vấn đề phức tạp và tìm ra giải pháp tối ưu, sáng
+                                tạo.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-book-reader"></i>
+                                <span class="skill-name">Self-Learning</span>
+                            </div>
+                            <p class="skill-desc">Tự học và cập nhật công nghệ mới nhanh chóng thông qua documentation
+                                và thực hành.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-search"></i>
+                                <span class="skill-name">Attention to Detail</span>
+                            </div>
+                            <p class="skill-desc">Chú trọng chi tiết trong code, UI/UX và đảm bảo chất lượng sản phẩm.
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-clock"></i>
+                                <span class="skill-name">Time Management</span>
+                            </div>
+                            <p class="skill-desc">Quản lý thời gian hiệu quả, đảm bảo deadline và ưu tiên công việc hợp
+                                lý.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Dự Án Nổi Bật</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Dự án Website -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="image/du_an_website.png" alt="Website Luyện Thi Sát Hạch">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Xem Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Xem Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Website</span>
+                        <h3 class="project-title">Website Luyện Thi Sát Hạch Lái Xe</h3>
+                        <p class="project-description">Nền tảng luyện thi sát hạch lái xe mô phỏng thực tế với thi Sa
+                            Hình và Đường Trường. Tính điểm tự động, phát hiện lỗi, hỗ trợ âm thanh hướng dẫn.</p>
+                        <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dự án Desktop -->
+                <div class="project-card" data-category="desktop" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="image/du_an_desktop.jpg" alt="Desktop App Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Xem Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Xem Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Desktop App</span>
+                        <h3 class="project-title">Phần mềm quét mã QR CCCD</h3>
+                        <p class="project-description">Phần mềm khai báo thông tin lưu trú tự động bằng webcam quét mã
+                            QR trên CCCD. Hỗ trợ chụp ảnh mặt trước/sau, quản lý danh sách công dân, tìm kiếm & lọc dữ
+                            liệu, xuất Excel báo cáo.</p>
+                        <div class="project-tech"><span>Python</span><span>SQLite</span><span>QRReader</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Liên Hệ</span>
+                <h2 class="section-title">Kết Nối Với Tôi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Sẵn sàng cho dự án mới?</h3>
+                    <p>Nếu bạn đang tìm kiếm một Full Stack Developer có kinh nghiệm, đừng ngần ngại liên hệ với tôi!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div><span class="contact-label">Email</span><a
+                                    href="mailto:nguyenhoanghuy.contact@gmail.com"
+                                    class="contact-value">nguyenhoanghuy.contact@gmail.com</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div><span class="contact-label">Điện thoại</span><a href="tel:0332936390"
+                                    class="contact-value">0332 936 390</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div><span class="contact-label">Địa điểm</span><span class="contact-value">Việt Nam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/NguyenHoangHuyProcoderNew" target="_blank" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/huyit.cdnkg/" target="_blank" class="social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group"><input type="text" id="name" required><label for="name">Họ và
+                                tên</label><span class="focus-border"></span></div>
+                        <div class="form-group"><input type="email" id="email" required><label
+                                for="email">Email</label><span class="focus-border"></span></div>
+                        <div class="form-group"><input type="text" id="subject" required><label for="subject">Tiêu
+                                đề</label><span class="focus-border"></span></div>
+                        <div class="form-group"><textarea id="message" rows="5" required></textarea><label
+                                for="message">Tin nhắn</label><span class="focus-border"></span></div>
+                        <button type="submit" class="btn btn-primary btn-submit"><span>Gửi Tin Nhắn</span><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><a href="#home" class="footer-logo">&lt;HUY/&gt;</a>
+                    <p>Full Stack Developer đam mê công nghệ.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên Kết</h4><a href="#home">Trang Chủ</a><a href="#about">Về Tôi</a><a href="#skills">Kỹ
+                        Năng</a><a href="#projects">Dự Án</a>
+                </div>
+                <div class="footer-services">
+                    <h4>Dịch Vụ</h4><a href="#">Web Development</a><a href="#">Desktop Apps</a><a href="#">API
+                        Development</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Kết Nối</h4>
+                    <div class="social-links"><a href="https://github.com/NguyenHoangHuyProcoderNew"><i
+                                class="fab fa-github"></i></a><a href="https://www.facebook.com/huyit.cdnkg/"><i
+                                class="fab fa-facebook-f"></i></a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nguyễn Hoàng Huy. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> in Vietnam</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
