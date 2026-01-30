@@ -4,463 +4,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nguyễn Hoàng Huy - Full Stack Developer với 5+ năm kinh nghiệm">
-    <title>Nguyễn Hoàng Huy | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio của Nguyễn Hoàng Huy - Senior Full-Stack Developer với hơn 5 năm kinh nghiệm phát triển ứng dụng web và mobile.">
+    <meta name="keywords" content="developer, full-stack, web developer, portfolio, lập trình viên">
+    <meta name="author" content="Nguyễn Hoàng Huy">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nguyễn Hoàng Huy - Senior Full-Stack Developer">
+    <meta property="og:description"
+        content="Portfolio của một lập trình viên với đam mê xây dựng sản phẩm công nghệ chất lượng cao.">
+    <meta property="og:type" content="website">
+
+    <title>Nguyễn Hoàng Huy | Profile</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="preloader">
-        <div class="loader">
-            <div class="spinner"></div>
-        </div>
-    </div>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-    <div id="particles-js"></div>
-
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo"><span>&lt;HUY/&gt;</span></a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Trang Chủ</a></li>
-                <li><a href="#about" class="nav-link">Về Tôi</a></li>
-                <li><a href="#skills" class="nav-link">Kỹ Năng</a></li>
-                <li><a href="#projects" class="nav-link">Dự Án</a></li>
-                <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-badge"><span class="badge-dot"></span><span>Sẵn sàng nhận việc</span></div>
-                <h1 class="hero-title">
-                    <span class="greeting">Xin chào, tôi là</span>
-                    <span class="name" data-text="Nguyễn Hoàng Huy">Nguyễn Hoàng Huy</span>
-                    <span class="title-typing"><span class="typed-text"></span><span
-                            class="cursor-typing">|</span></span>
-                </h1>
-                <p class="hero-description">Full Stack Developer với <strong>5+ năm kinh nghiệm</strong> trong việc xây
-                    dựng các ứng dụng web hiện đại và phần mềm desktop chuyên nghiệp.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i><span>Xem Dự Án</span></a>
-                    <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i><span>Liên Hệ</span></a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item"><span class="stat-number" data-target="5">0</span><span
-                            class="stat-plus">+</span><span class="stat-label">Năm KN</span></div>
-                    <div class="stat-item"><span class="stat-number" data-target="50">0</span><span
-                            class="stat-plus">+</span><span class="stat-label">Dự Án</span></div>
-                    <div class="stat-item"><span class="stat-number" data-target="30">0</span><span
-                            class="stat-plus">+</span><span class="stat-label">Khách Hàng</span></div>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <div class="image-wrapper">
-                    <div class="image-border"></div>
-                    <img src="image/avatar.jpg" alt="Nguyễn Hoàng Huy" class="profile-img">
-                    <div class="floating-badge badge-1"><i class="fab fa-react"></i></div>
-                    <div class="floating-badge badge-2"><i class="fab fa-node-js"></i></div>
-                    <div class="floating-badge badge-3"><i class="fab fa-python"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div><span>Cuộn xuống</span>
-        </div>
-    </section>
-
-    <section id="about" class="about">
+    <!-- ============================================
+       HEADER
+       ============================================ -->
+    <header class="header" id="header">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Giới Thiệu</span>
-                <h2 class="section-title">Về Bản Thân Tôi</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="about-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=600&h=700&fit=crop"
-                            alt="Working">
-                        <div class="experience-badge"><span class="exp-number">5+</span><span
-                                class="exp-text">Năm<br>Kinh Nghiệm</span></div>
-                    </div>
-                </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Xin chào! Tôi là <span class="highlight">Huy</span></h3>
-                    <p>Là một <strong>Full Stack Developer</strong> đam mê công nghệ với hơn 5 năm kinh nghiệm trong
-                        việc phát triển các ứng dụng web và desktop. Tôi tin rằng mỗi dòng code đều có thể tạo ra giá
-                        trị thực sự cho người dùng và doanh nghiệp.</p>
-                    <p>Tôi đã có cơ hội làm việc với nhiều loại dự án khác nhau, từ các website thương mại điện tử, hệ
-                        thống quản lý doanh nghiệp, đến các ứng dụng desktop phức tạp.</p>
-                    <div class="about-info">
-                        <div class="info-item"><i class="fas fa-user"></i>
-                            <div><span class="info-label">Họ tên</span><span class="info-value">Nguyễn Hoàng Huy</span>
-                            </div>
-                        </div>
-                        <div class="info-item"><i class="fas fa-briefcase"></i>
-                            <div><span class="info-label">Kinh nghiệm</span><span class="info-value">5+ năm</span></div>
-                        </div>
-                        <div class="info-item"><i class="fas fa-map-marker-alt"></i>
-                            <div><span class="info-label">Địa điểm</span><span class="info-value">Việt Nam</span></div>
-                        </div>
-                        <div class="info-item"><i class="fas fa-language"></i>
-                            <div><span class="info-label">Ngôn ngữ</span><span class="info-value">Tiếng Việt,
-                                    English</span></div>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-primary"><i class="fas fa-download"></i><span>Tải CV</span></a>
-                </div>
+            <div class="header-inner">
+                <a href="#" class="logo">Huy<span>.dev</span></a>
+
+                <nav class="nav-menu" id="nav-menu">
+                    <a href="#hero" class="nav-link">Trang chủ</a>
+                    <a href="#projects" class="nav-link">Dự án</a>
+                    <a href="#contact" class="nav-link">Liên hệ</a>
+                </nav>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="skills" class="skills">
+    <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+    <section class="hero" id="hero">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Chuyên Môn</span>
-                <h2 class="section-title">Kỹ Năng & Công Nghệ</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <!-- Web Development - Gắn với dự án Website Luyện Thi -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <div class="category-icon"><i class="fas fa-globe"></i></div>
-                        <div class="category-info">
-                            <h3>Web Development</h3>
-                            <span class="project-badge"><i class="fas fa-link"></i> Website Luyện Thi Sát Hạch</span>
-                        </div>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge fade-up">
+                        <span>Sẵn sàng nhận dự án mới</span>
                     </div>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fab fa-html5"></i>
-                                <span class="skill-name">HTML5 & CSS3</span>
-                            </div>
-                            <p class="skill-desc">Xây dựng giao diện mô phỏng Sa Hình và Đường Trường với layout phức
-                                tạp, responsive hoàn toàn.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fab fa-js"></i>
-                                <span class="skill-name">JavaScript</span>
-                            </div>
-                            <p class="skill-desc">Xử lý logic tính điểm tự động, phát hiện lỗi vi phạm, điều khiển âm
-                                thanh hướng dẫn real-time.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span class="skill-name">Responsive Design</span>
-                            </div>
-                            <p class="skill-desc">Tối ưu trải nghiệm trên mọi thiết bị từ mobile đến desktop với CSS
-                                Grid & Flexbox.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-magic"></i>
-                                <span class="skill-name">CSS Animation</span>
-                            </div>
-                            <p class="skill-desc">Tạo hiệu ứng mô phỏng xe di chuyển, đèn tín hiệu, và các animation
-                                tương tác người dùng.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Desktop & Python - Gắn với dự án QR CCCD -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <div class="category-icon"><i class="fas fa-desktop"></i></div>
-                        <div class="category-info">
-                            <h3>Desktop & Python</h3>
-                            <span class="project-badge"><i class="fas fa-link"></i> Phần mềm QR CCCD</span>
-                        </div>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fab fa-python"></i>
-                                <span class="skill-name">Python</span>
-                            </div>
-                            <p class="skill-desc">Phát triển ứng dụng desktop hoàn chỉnh với xử lý hình ảnh, quét QR
-                                code và quản lý dữ liệu.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-database"></i>
-                                <span class="skill-name">SQLite Database</span>
-                            </div>
-                            <p class="skill-desc">Thiết kế và quản lý CSDL lưu trữ thông tin công dân, hỗ trợ tìm kiếm,
-                                lọc và xuất báo cáo.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-qrcode"></i>
-                                <span class="skill-name">QR Code Reader</span>
-                            </div>
-                            <p class="skill-desc">Tích hợp webcam quét mã QR trên CCCD, parse dữ liệu và tự động điền
-                                thông tin.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-file-excel"></i>
-                                <span class="skill-name">Data Export</span>
-                            </div>
-                            <p class="skill-desc">Xuất dữ liệu ra Excel với format chuyên nghiệp, hỗ trợ báo cáo và lưu
-                                trữ.</p>
-                        </div>
-                    </div>
-                </div>
+                    <h1 class="hero-title fade-up stagger-1">
+                        Xin chào, tôi là<br>
+                        <span class="highlight">Nguyễn Hoàng Huy</span>
+                    </h1>
 
-                <!-- DevOps & Tools -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <div class="category-icon"><i class="fas fa-tools"></i></div>
-                        <div class="category-info">
-                            <h3>DevOps & Tools</h3>
-                            <span class="project-badge"><i class="fas fa-check-circle"></i> Áp dụng trong mọi dự
-                                án</span>
-                        </div>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fab fa-git-alt"></i>
-                                <span class="skill-name">Git & GitHub</span>
-                            </div>
-                            <p class="skill-desc">Quản lý version control, branching strategy và collaboration trong
-                                team development.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-code"></i>
-                                <span class="skill-name">VS Code & IDE</span>
-                            </div>
-                            <p class="skill-desc">Thành thạo các IDE hiện đại với debugging, extensions và workflow tối
-                                ưu.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-terminal"></i>
-                                <span class="skill-name">Command Line</span>
-                            </div>
-                            <p class="skill-desc">Sử dụng thành thạo PowerShell, Bash cho automation và scripting tasks.
-                            </p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-bug"></i>
-                                <span class="skill-name">Debugging</span>
-                            </div>
-                            <p class="skill-desc">Kỹ năng debug, trace lỗi và tối ưu performance cho ứng dụng.</p>
-                        </div>
-                    </div>
-                </div>
+                    <p class="hero-role fade-up stagger-2">AI-Assisted Software Developer | Web & Desktop Apps</p>
 
-                <!-- Soft Skills -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <div class="category-header">
-                        <div class="category-icon"><i class="fas fa-brain"></i></div>
-                        <div class="category-info">
-                            <h3>Soft Skills</h3>
-                            <span class="project-badge"><i class="fas fa-star"></i> Điểm mạnh cá nhân</span>
-                        </div>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-lightbulb"></i>
-                                <span class="skill-name">Problem Solving</span>
-                            </div>
-                            <p class="skill-desc">Khả năng phân tích vấn đề phức tạp và tìm ra giải pháp tối ưu, sáng
-                                tạo.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-book-reader"></i>
-                                <span class="skill-name">Self-Learning</span>
-                            </div>
-                            <p class="skill-desc">Tự học và cập nhật công nghệ mới nhanh chóng thông qua documentation
-                                và thực hành.</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-search"></i>
-                                <span class="skill-name">Attention to Detail</span>
-                            </div>
-                            <p class="skill-desc">Chú trọng chi tiết trong code, UI/UX và đảm bảo chất lượng sản phẩm.
-                            </p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card-header">
-                                <i class="fas fa-clock"></i>
-                                <span class="skill-name">Time Management</span>
-                            </div>
-                            <p class="skill-desc">Quản lý thời gian hiệu quả, đảm bảo deadline và ưu tiên công việc hợp
-                                lý.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Portfolio</span>
-                <h2 class="section-title">Dự Án Nổi Bật</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <!-- Dự án Website -->
-                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="image/du_an_website.png" alt="Website Luyện Thi Sát Hạch">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Xem Demo"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link" title="Xem Code"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">Website</span>
-                        <h3 class="project-title">Website Luyện Thi Sát Hạch Lái Xe</h3>
-                        <p class="project-description">Nền tảng luyện thi sát hạch lái xe mô phỏng thực tế với thi Sa
-                            Hình và Đường Trường. Tính điểm tự động, phát hiện lỗi, hỗ trợ âm thanh hướng dẫn.</p>
-                        <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Responsive</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dự án Desktop -->
-                <div class="project-card" data-category="desktop" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="image/du_an_desktop.jpg" alt="Desktop App Project">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Xem Demo"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link" title="Xem Code"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">Desktop App</span>
-                        <h3 class="project-title">Phần mềm quét mã QR CCCD</h3>
-                        <p class="project-description">Phần mềm khai báo thông tin lưu trú tự động bằng webcam quét mã
-                            QR trên CCCD. Hỗ trợ chụp ảnh mặt trước/sau, quản lý danh sách công dân, tìm kiếm & lọc dữ
-                            liệu, xuất Excel báo cáo.</p>
-                        <div class="project-tech"><span>Python</span><span>SQLite</span><span>QRReader</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Liên Hệ</span>
-                <h2 class="section-title">Kết Nối Với Tôi</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Sẵn sàng cho dự án mới?</h3>
-                    <p>Nếu bạn đang tìm kiếm một Full Stack Developer có kinh nghiệm, đừng ngần ngại liên hệ với tôi!
+                    <p class="hero-description fade-up stagger-3">
+                        Software Developer phát triển ứng dụng web và desktop. Chú trọng hiệu quả triển khai, tự động
+                        hóa và giá trị sử dụng thực tế.
                     </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div><span class="contact-label">Email</span><a
-                                    href="mailto:nguyenhoanghuy.contact@gmail.com"
-                                    class="contact-value">nguyenhoanghuy.contact@gmail.com</a></div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div><span class="contact-label">Điện thoại</span><a href="tel:0332936390"
-                                    class="contact-value">0332 936 390</a></div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div><span class="contact-label">Địa điểm</span><span class="contact-value">Việt Nam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/NguyenHoangHuyProcoderNew" target="_blank" class="social-link"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/huyit.cdnkg/" target="_blank" class="social-link"><i
-                                class="fab fa-facebook-f"></i></a>
+
+                    <div class="hero-buttons fade-up stagger-4">
+                        <a href="#projects" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            Xem các dự án của tôi
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Liên hệ ngay
+                        </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group"><input type="text" id="name" required><label for="name">Họ và
-                                tên</label><span class="focus-border"></span></div>
-                        <div class="form-group"><input type="email" id="email" required><label
-                                for="email">Email</label><span class="focus-border"></span></div>
-                        <div class="form-group"><input type="text" id="subject" required><label for="subject">Tiêu
-                                đề</label><span class="focus-border"></span></div>
-                        <div class="form-group"><textarea id="message" rows="5" required></textarea><label
-                                for="message">Tin nhắn</label><span class="focus-border"></span></div>
-                        <button type="submit" class="btn btn-primary btn-submit"><span>Gửi Tin Nhắn</span><i
-                                class="fas fa-paper-plane"></i></button>
-                    </form>
+
+                <div class="hero-visual fade-up">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-bg"></div>
+                        <!-- Thay thế bằng ảnh thật của bạn -->
+                        <img src="img/picture-profile.jpg" alt="Nguyễn Hoàng Huy - Developer" class="hero-image">
+                    </div>
+
+                    <!-- Floating elements -->
+                    <div class="hero-float hero-float-1">
+                        <span class="float-icon">💻</span>
+                        <div>
+                            <strong>5+ năm</strong>
+                            <span style="display: block; font-size: 12px; color: var(--color-text-muted);">Kinh
+                                nghiệm</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-float hero-float-2">
+                        <span class="float-icon">🚀</span>
+                        <div>
+                            <strong>20+ dự án</strong>
+                            <span style="display: block; font-size: 12px; color: var(--color-text-muted);">Đã hoàn
+                                thành</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- ============================================
+       PROJECTS SECTION
+       ============================================ -->
+    <section class="projects section" id="projects">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand"><a href="#home" class="footer-logo">&lt;HUY/&gt;</a>
-                    <p>Full Stack Developer đam mê công nghệ.</p>
+            <header class="section-header">
+                <span class="section-label fade-up">Dự án nổi bật</span>
+                <h2 class="section-title fade-up stagger-1">Các dự án tôi đã thực hiện</h2>
+                <p class="section-description fade-up stagger-2">
+                    Một số dự án tiêu biểu thể hiện năng lực và kinh nghiệm của tôi trong lĩnh vực phát triển ứng dụng
+                    web và app desktop.
+                </p>
+            </header>
+
+            <div class="projects-grid">
+
+                <!-- ========== PROJECT 1 ========== -->
+                <article class="project-card fade-up">
+                    <div class="project-gallery">
+                        <div class="project-slides">
+                            <div class="project-slide">
+                                <img src="img/project_qrcode_cccd/picture_1.jpg"
+                                    alt="Phần mềm đọc QR CCCD - Giao diện nhập liệu">
+                            </div>
+                            <div class="project-slide">
+                                <img src="img/project_qrcode_cccd/picture_2.jpg"
+                                    alt="Phần mềm đọc QR CCCD - Danh sách công dân">
+                            </div>
+                        </div>
+
+                        <button class="gallery-nav prev" aria-label="Ảnh trước">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="gallery-nav next" aria-label="Ảnh tiếp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="gallery-dots"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Phần Mềm Đọc QR Code Trên CCCD</h3>
+                        <p class="project-description">
+                            Ứng dụng desktop tự động đọc mã QR trên căn cước công dân qua webcam, trích xuất thông tin
+                            công dân (họ tên, ngày sinh, giới tính, địa chỉ...), chụp ảnh mặt trước/sau và lưu trữ vào
+                            database. Hỗ trợ quản lý danh sách công dân với tìm kiếm, lọc theo ngày, xuất Excel.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">QRReader</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=FSaahF1RK14" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ========== PROJECT 2 ========== -->
+                <article class="project-card fade-up">
+                    <div class="project-gallery">
+                        <div class="project-slides">
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop"
+                                    alt="Mobile Banking App - Home">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop"
+                                    alt="Mobile Banking App - Transactions">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop"
+                                    alt="Mobile Banking App - Analytics">
+                            </div>
+                        </div>
+
+                        <button class="gallery-nav prev" aria-label="Ảnh trước">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="gallery-nav next" aria-label="Ảnh tiếp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="gallery-dots"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Banking App</h3>
+                        <p class="project-description">
+                            Ứng dụng ngân hàng di động với các tính năng chuyển tiền, thanh toán hóa đơn,
+                            quản lý tài khoản và phân tích chi tiêu thông minh. Bảo mật 2FA và xác thực sinh trắc học.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/username/mobile-banking" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://youtube.com/watch?v=demo2" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ========== PROJECT 3 ========== -->
+                <article class="project-card fade-up">
+                    <div class="project-gallery">
+                        <div class="project-slides">
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&h=500&fit=crop"
+                                    alt="Project Management - Board">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=500&fit=crop"
+                                    alt="Project Management - Team">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=500&fit=crop"
+                                    alt="Project Management - Timeline">
+                            </div>
+                        </div>
+
+                        <button class="gallery-nav prev" aria-label="Ảnh trước">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="gallery-nav next" aria-label="Ảnh tiếp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="gallery-dots"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Project Management Platform</h3>
+                        <p class="project-description">
+                            Nền tảng quản lý dự án với Kanban board, Gantt chart, quản lý team và tài liệu.
+                            Tích hợp video call, chat realtime và thống kê hiệu suất làm việc.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/username/project-manager" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://youtube.com/watch?v=demo3" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ========== PROJECT 4 ========== -->
+                <article class="project-card fade-up">
+                    <div class="project-gallery">
+                        <div class="project-slides">
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=500&fit=crop"
+                                    alt="AI Analytics - Dashboard">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=500&fit=crop"
+                                    alt="AI Analytics - Machine Learning">
+                            </div>
+                            <div class="project-slide">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop"
+                                    alt="AI Analytics - Insights">
+                            </div>
+                        </div>
+
+                        <button class="gallery-nav prev" aria-label="Ảnh trước">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="gallery-nav next" aria-label="Ảnh tiếp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="gallery-dots"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Analytics Platform</h3>
+                        <p class="project-description">
+                            Nền tảng phân tích dữ liệu sử dụng AI để dự đoán xu hướng kinh doanh,
+                            phân tích hành vi khách hàng và đề xuất chiến lược marketing tự động.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GCP</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/username/ai-analytics" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://youtube.com/watch?v=demo4" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Demo Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       CONTACT / FOOTER
+       ============================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">Huy<span>.dev</span></div>
+                    <p class="footer-description">
+                        Senior Full-Stack Developer với đam mê xây dựng những sản phẩm công nghệ
+                        có giá trị và trải nghiệm người dùng xuất sắc. Sẵn sàng nhận các dự án mới
+                        và cơ hội hợp tác.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/username" target="_blank" rel="noopener" class="social-link"
+                            aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" class="social-link"
+                            aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@huy.dev" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Liên Kết</h4><a href="#home">Trang Chủ</a><a href="#about">Về Tôi</a><a href="#skills">Kỹ
-                        Năng</a><a href="#projects">Dự Án</a>
+
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <nav class="footer-links">
+                        <a href="#hero" class="footer-link">Trang chủ</a>
+                        <a href="#projects" class="footer-link">Dự án</a>
+                        <a href="#contact" class="footer-link">Liên hệ</a>
+                    </nav>
                 </div>
-                <div class="footer-services">
-                    <h4>Dịch Vụ</h4><a href="#">Web Development</a><a href="#">Desktop Apps</a><a href="#">API
-                        Development</a>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Kết Nối</h4>
-                    <div class="social-links"><a href="https://github.com/NguyenHoangHuyProcoderNew"><i
-                                class="fab fa-github"></i></a><a href="https://www.facebook.com/huyit.cdnkg/"><i
-                                class="fab fa-facebook-f"></i></a></div>
+
+                <div class="footer-column">
+                    <h4>Liên hệ</h4>
+                    <nav class="footer-links">
+                        <a href="mailto:contact@huy.dev" class="footer-link">contact@huy.dev</a>
+                        <a href="tel:+84123456789" class="footer-link">+84 123 456 789</a>
+                        <span class="footer-link">Hồ Chí Minh, Việt Nam</span>
+                    </nav>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Nguyễn Hoàng Huy. All Rights Reserved.</p>
-                <p>Made with <i class="fas fa-heart"></i> in Vietnam</p>
+                <p class="footer-copyright">
+                    © 2026 Nguyễn Hoàng Huy. Tất cả quyền được bảo lưu.
+                </p>
             </div>
         </div>
     </footer>
 
-    <a href="#home" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <!-- ============================================
+       LIGHTBOX MODAL
+       ============================================ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Đóng">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+        <button class="lightbox-nav prev" aria-label="Ảnh trước">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox image" class="lightbox-image" id="lightbox-image">
+        </div>
+
+        <button class="lightbox-nav next" aria-label="Ảnh tiếp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
